@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang=zh>
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
@@ -18,23 +18,23 @@
   
   
   <title>hexo+githubPage搭建个人博客 | Hexo</title>
-  <meta name="description" content="1.本地环境配置： 安装node.js  安装git  通过npm安装hexo：npm i -g hexo-cli  2.github上的配置 1.新建git仓库   2.点击settings设置      3.选择主分支(根据自己需求选择分支)，然后点击save保存     3.本地创建hexo项目  1.hexo init 项目名     2.修改配置文件_config.yml    1.设置">
+  <meta name="description" content="1.本地环境配置： 安装node.js  安装git  通过npm安装hexo：npm i -g hexo-cli  2.github上的配置 1.新建git仓库   2.点击settings设置      3.选择主分支(根据自己需求选择分支)，然后点击save保存     3.本地创建hexo项目  1.初始化hexo项目 1hexo init 项目名    2.修改配置文件_config.y">
 <meta name="keywords" content="git,hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo+githubPage搭建个人博客">
 <meta property="og:url" content="https://janicedong0214.github.io/myStudyBlog/2019/01/11/test/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.本地环境配置： 安装node.js  安装git  通过npm安装hexo：npm i -g hexo-cli  2.github上的配置 1.新建git仓库   2.点击settings设置      3.选择主分支(根据自己需求选择分支)，然后点击save保存     3.本地创建hexo项目  1.hexo init 项目名     2.修改配置文件_config.yml    1.设置">
-<meta property="og:locale" content="default">
+<meta property="og:description" content="1.本地环境配置： 安装node.js  安装git  通过npm安装hexo：npm i -g hexo-cli  2.github上的配置 1.新建git仓库   2.点击settings设置      3.选择主分支(根据自己需求选择分支)，然后点击save保存     3.本地创建hexo项目  1.初始化hexo项目 1hexo init 项目名    2.修改配置文件_config.y">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://janicedong0214.github.io/myStudyBlog/2019/01/11/test/1.jpg">
 <meta property="og:image" content="https://janicedong0214.github.io/myStudyBlog/2019/01/11/test/2.jpg">
 <meta property="og:image" content="https://janicedong0214.github.io/myStudyBlog/2019/01/11/test/3.png">
 <meta property="og:image" content="https://janicedong0214.github.io/myStudyBlog/2019/01/11/test/4.jpg">
 <meta property="og:image" content="https://janicedong0214.github.io/myStudyBlog/2019/01/11/test/5.jpg">
-<meta property="og:updated_time" content="2019-01-11T10:18:48.295Z">
+<meta property="og:updated_time" content="2019-01-11T10:22:46.354Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+githubPage搭建个人博客">
-<meta name="twitter:description" content="1.本地环境配置： 安装node.js  安装git  通过npm安装hexo：npm i -g hexo-cli  2.github上的配置 1.新建git仓库   2.点击settings设置      3.选择主分支(根据自己需求选择分支)，然后点击save保存     3.本地创建hexo项目  1.hexo init 项目名     2.修改配置文件_config.yml    1.设置">
+<meta name="twitter:description" content="1.本地环境配置： 安装node.js  安装git  通过npm安装hexo：npm i -g hexo-cli  2.github上的配置 1.新建git仓库   2.点击settings设置      3.选择主分支(根据自己需求选择分支)，然后点击save保存     3.本地创建hexo项目  1.初始化hexo项目 1hexo init 项目名    2.修改配置文件_config.y">
 <meta name="twitter:image" content="https://janicedong0214.github.io/myStudyBlog/2019/01/11/test/1.jpg">
   <!-- Canonical links -->
   <link rel="canonical" href="https://janicedong0214.github.io/myStudyBlog/2019/01/11/test/index.html">
@@ -71,7 +71,7 @@
 
     <form class="search-form sidebar-form">
         <div class="input-group">
-            <input type="text" class="search-form-input form-control" placeholder="Search">
+            <input type="text" class="search-form-input form-control" placeholder="搜索">
             <span class="input-group-btn">
                 <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
             </span>
@@ -81,7 +81,7 @@
   <div class="ins-search-mask"></div>
   <div class="ins-search-container">
     <div class="ins-input-wrapper">
-      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech="">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech="">
       <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
     </div>
     <div class="ins-section-wrapper">
@@ -108,7 +108,7 @@
             
             <i class="icon icon-home-fill"></i>
             
-            <span class="menu-title">Home</span>
+            <span class="menu-title">首页</span>
           </a>
         </li>
         
@@ -118,7 +118,7 @@
             
             <i class="icon icon-archives-fill"></i>
             
-            <span class="menu-title">Archives</span>
+            <span class="menu-title">归档</span>
           </a>
         </li>
         
@@ -128,7 +128,7 @@
             
             <i class="icon icon-folder"></i>
             
-            <span class="menu-title">Categories</span>
+            <span class="menu-title">分类</span>
           </a>
         </li>
         
@@ -138,7 +138,7 @@
             
             <i class="icon icon-tags"></i>
             
-            <span class="menu-title">Tags</span>
+            <span class="menu-title">标签</span>
           </a>
         </li>
         
@@ -148,7 +148,7 @@
             
             <i class="icon icon-project"></i>
             
-            <span class="menu-title">Repository</span>
+            <span class="menu-title">项目</span>
           </a>
         </li>
         
@@ -158,7 +158,7 @@
             
             <i class="icon icon-book-fill"></i>
             
-            <span class="menu-title">Books</span>
+            <span class="menu-title">书单</span>
           </a>
         </li>
         
@@ -168,7 +168,7 @@
             
             <i class="icon icon-friendship"></i>
             
-            <span class="menu-title">Links</span>
+            <span class="menu-title">友链</span>
           </a>
         </li>
         
@@ -178,7 +178,7 @@
             
             <i class="icon icon-cup-fill"></i>
             
-            <span class="menu-title">About</span>
+            <span class="menu-title">关于</span>
           </a>
         </li>
         
@@ -204,7 +204,7 @@
   <div class="slimContent">
     
       <div class="widget">
-    <h3 class="widget-title">Board</h3>
+    <h3 class="widget-title">公告</h3>
     <div class="widget-body">
         <div id="board">
             <div class="content">
@@ -220,7 +220,7 @@
     
       
   <div class="widget">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">标签</h3>
     <div class="widget-body">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/myStudyBlog/tags/git/">git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/myStudyBlog/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li></ul>
     </div>
@@ -230,7 +230,7 @@
     
       
   <div class="widget">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">标签云</h3>
     <div class="widget-body tagcloud">
       <a href="/myStudyBlog/tags/git/" style="font-size: 13px;">git</a> <a href="/myStudyBlog/tags/hexo/" style="font-size: 13px;">hexo</a>
     </div>
@@ -239,9 +239,9 @@
     
       
   <div class="widget">
-    <h3 class="widget-title">Archive</h3>
+    <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/myStudyBlog/archives/2019/01/">January 2019</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/myStudyBlog/archives/2019/01/">一月 2019</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -249,7 +249,7 @@
     
       
   <div class="widget">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">最新文章</h3>
     <div class="widget-body">
       <ul class="recent-post-list list-unstyled no-thumbnail">
         
@@ -264,21 +264,6 @@
               </p>
               <p class="item-date">
                 <time datetime="2019-01-11T07:50:39.000Z" itemprop="datePublished">2019-01-11</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                
-              </p>
-              <p class="item-title">
-                <a href="/myStudyBlog/2019/01/11/hello-world/" class="title">Hello World</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2019-01-11T05:35:33.151Z" itemprop="datePublished">2019-01-11</time>
               </p>
             </div>
           </li>
@@ -325,7 +310,7 @@
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/myStudyBlog/2019/01/11/test/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/myStudyBlog/2019/01/11/test/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
@@ -350,25 +335,33 @@
 <p><img src="/myStudyBlog/2019/01/11/test/2.jpg" alt=""></p>
 </blockquote>
 <h4 id="3-本地创建hexo项目"><a href="#3-本地创建hexo项目" class="headerlink" title="3.本地创建hexo项目"></a>3.本地创建hexo项目</h4><blockquote>
-<p><strong> 1.hexo init 项目名 </strong></p>
+<p><strong> 1.初始化hexo项目 </strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init 项目名</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
 <p><strong> 2.修改配置文件_config.yml </strong></p>
 </blockquote>
 <blockquote>
-<p>1.设置url和根目录root</p>
+<ol>
+<li>设置url和根目录root</li>
+</ol>
 </blockquote>
 <p><img src="/myStudyBlog/2019/01/11/test/3.png" alt=""></p>
 <blockquote>
-<p>2.设置喜欢的主题<br>注：到官网选择主题模板，克隆到theme文件夹下，<br>例：git clone <a href="https://github.com/cofess/hexo-theme-pure.git" target="_blank" rel="noopener">https://github.com/cofess/hexo-theme-pure.git</a> themes/pure</p>
+<ol start="2">
+<li>设置喜欢的主题<br>注：到官网选择主题模板，克隆到theme文件夹下，<br>例：git clone <a href="https://github.com/cofess/hexo-theme-pure.git" target="_blank" rel="noopener">https://github.com/cofess/hexo-theme-pure.git</a> themes/pure</li>
+</ol>
 </blockquote>
 <p><img src="/myStudyBlog/2019/01/11/test/4.jpg" alt=""></p>
 <blockquote>
-<p>3.配置部署项</p>
+<ol start="3">
+<li>配置部署项</li>
+</ol>
 </blockquote>
 <p><img src="/myStudyBlog/2019/01/11/test/5.jpg" alt=""></p>
 <blockquote>
-<p>4.安装git插件：npm i hexo-deployer-git –save</p>
+<ol start="4">
+<li>安装git插件：npm i hexo-deployer-git –save</li>
+</ol>
 </blockquote>
 <h4 id="4-常用命令"><a href="#4-常用命令" class="headerlink" title="4.常用命令"></a>4.常用命令</h4><blockquote>
 <p>  hexo g<br>  hexo s(本地运行)<br>  hexo d：部署到远程github上，通过之前设置的url+root就能访问了</p>
@@ -376,7 +369,7 @@
 
       
     </div>
-    <div class="article-footer">
+    <!-- <div class="article-footer">
       <blockquote class="mt-2x">
   <ul class="post-copyright list-unstyled">
     
@@ -409,7 +402,7 @@
 </div>
 
 
-    </div>
+    </div> -->
   </article>
   
     
@@ -426,19 +419,9 @@
   <nav class="bar bar-footer clearfix" data-stick-bottom="">
   <div class="bar-inner">
   
-  <ul class="pager pull-left">
-    
-    
-    <li class="next">
-      <a href="/myStudyBlog/2019/01/11/hello-world/" title="Hello World"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
-    </li>
-    
-    
-  </ul>
-  
   
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>$</span></button>
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
   <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
     <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
   </div> -->
@@ -460,31 +443,31 @@
       <div class="modal-body">
         <div class="donate-box">
           <div class="donate-head">
-            <p>Maybe you could buy me a cup of coffee.</p>
+            <p>感谢您的支持，我会继续努力的!</p>
           </div>
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane fade active in" id="alipay">
               <div class="donate-payimg">
-                <img src="/myStudyBlog/images/donate/alipayimg.png" alt="Scan Qrcode" title="Scan">
+                <img src="/myStudyBlog/images/donate/alipayimg.png" alt="扫码支持" title="扫一扫">
               </div>
-              <p class="text-muted mv">Scan this qrcode</p>
-              <p class="text-grey">Open alipay app scan this qrcode, buy me a coffee!</p>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
             </div>
             <div role="tabpanel" class="tab-pane fade" id="wechatpay">
               <div class="donate-payimg">
-                <img src="/myStudyBlog/images/donate/wechatpayimg.png" alt="Scan Qrcode" title="Scan">
+                <img src="/myStudyBlog/images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫">
               </div>
-              <p class="text-muted mv">Scan this qrcode</p>
-              <p class="text-grey">Open wechat app scan this qrcode, buy me a coffee!</p>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
             </div>
           </div>
           <div class="donate-footer">
             <ul class="nav nav-tabs nav-justified" role="tablist">
               <li role="presentation" class="active">
-                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> alipay</a>
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
               </li>
               <li role="presentation" class="">
-                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> wechat payment</a>
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
               </li>
             </ul>
           </div>
@@ -529,11 +512,11 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
-            PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
-            UNTITLED: '(Untitled)',
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
         },
         ROOT_URL: '/myStudyBlog/',
         CONTENT_URL: '/myStudyBlog/content.json',
