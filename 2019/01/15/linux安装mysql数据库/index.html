@@ -18,18 +18,18 @@
   
   
   <title>linux安装mysql数据库 | Hexo</title>
-  <meta name="description" content="只学习过linux的一些基本命令，租一台小服务器（腾讯云），只是想搭建一个贴近真实的后台环境，做一些喜欢的事情  1.基本过程 1.在线安装mysql1wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz   2.解压mysql12tar -zxvf &amp;lt;my">
+  <meta name="description" content="只学习过linux的一些基本命令，租一台小服务器（腾讯云），只是想搭建一个贴近真实的后台环境，做一些喜欢的事情  基本过程1.在线安装mysql1wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz 2.解压mysql12tar -zxvf &amp;lt;mysql压缩">
 <meta name="keywords" content="linux,mysql">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux安装mysql数据库">
 <meta property="og:url" content="https://janicedong0214.github.io/myStudyBlog/2019/01/15/linux安装mysql数据库/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="只学习过linux的一些基本命令，租一台小服务器（腾讯云），只是想搭建一个贴近真实的后台环境，做一些喜欢的事情  1.基本过程 1.在线安装mysql1wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz   2.解压mysql12tar -zxvf &amp;lt;my">
+<meta property="og:description" content="只学习过linux的一些基本命令，租一台小服务器（腾讯云），只是想搭建一个贴近真实的后台环境，做一些喜欢的事情  基本过程1.在线安装mysql1wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz 2.解压mysql12tar -zxvf &amp;lt;mysql压缩">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-15T07:26:53.973Z">
+<meta property="og:updated_time" content="2019-01-15T07:33:31.467Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux安装mysql数据库">
-<meta name="twitter:description" content="只学习过linux的一些基本命令，租一台小服务器（腾讯云），只是想搭建一个贴近真实的后台环境，做一些喜欢的事情  1.基本过程 1.在线安装mysql1wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz   2.解压mysql12tar -zxvf &amp;lt;my">
+<meta name="twitter:description" content="只学习过linux的一些基本命令，租一台小服务器（腾讯云），只是想搭建一个贴近真实的后台环境，做一些喜欢的事情  基本过程1.在线安装mysql1wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz 2.解压mysql12tar -zxvf &amp;lt;mysql压缩">
   <!-- Canonical links -->
   <link rel="canonical" href="https://janicedong0214.github.io/myStudyBlog/2019/01/15/linux安装mysql数据库/index.html">
   
@@ -343,33 +343,33 @@
         <blockquote>
 <p>只学习过linux的一些基本命令，租一台小服务器（腾讯云），只是想搭建一个贴近真实的后台环境，做一些喜欢的事情</p>
 </blockquote>
-<h6 id="1-基本过程"><a href="#1-基本过程" class="headerlink" title="1.基本过程"></a>1.基本过程</h6><blockquote>
-<p>1.在线安装mysql<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<blockquote>
-<p>2.解压mysql<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf &lt;mysql压缩包名&gt;</span><br><span class="line">mv &lt;mysql目录名&gt; /usr/local/mysql</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<blockquote>
-<p>3.新建用户及mysql目录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">groupadd mysql</span><br><span class="line"></span><br><span class="line">useradd -r -g mysql mysql</span><br><span class="line"></span><br><span class="line">设置密码</span><br><span class="line">passwd mysql</span><br><span class="line"></span><br><span class="line">复制my-default.cnf到/etc/目录下</span><br><span class="line">cp /usr/local/mysql/support-files/my-defalut.cnf /etc/my.cnf</span><br><span class="line"></span><br><span class="line">修改my.cnf</span><br><span class="line">[mysql] </span><br><span class="line"></span><br><span class="line">default-character-set=utf8 </span><br><span class="line"></span><br><span class="line">[mysqld] </span><br><span class="line"></span><br><span class="line">default-storage-engine=INNODB </span><br><span class="line"></span><br><span class="line">character_set_server=utf8 </span><br><span class="line"></span><br><span class="line">复制mysql.serve到/etc/init.d/</span><br><span class="line">cp /usr/local/mysql/support-files/mysql.serve /etc/init.d/mysql</span><br><span class="line"></span><br><span class="line">修改 /etc/init.d/mysql参数</span><br><span class="line">basedir</span><br><span class="line">datadir</span><br><span class="line"></span><br><span class="line">修改mysql目录权限</span><br><span class="line">chown -R mysql:mysql /usr/local/mysql</span><br><span class="line"></span><br><span class="line">启动数据库</span><br><span class="line">service mysql start</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<blockquote>
-<p>4.bug集</p>
+<h5 id="基本过程"><a href="#基本过程" class="headerlink" title="基本过程"></a>基本过程</h5><h6 id="1-在线安装mysql"><a href="#1-在线安装mysql" class="headerlink" title="1.在线安装mysql"></a>1.在线安装mysql</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz</span><br></pre></td></tr></table></figure>
+<h6 id="2-解压mysql"><a href="#2-解压mysql" class="headerlink" title="2.解压mysql"></a>2.解压mysql</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf &lt;mysql压缩包名&gt;</span><br><span class="line">mv &lt;mysql目录名&gt; /usr/local/mysql</span><br></pre></td></tr></table></figure>
+<h6 id="3-新建用户及mysql目录"><a href="#3-新建用户及mysql目录" class="headerlink" title="3.新建用户及mysql目录"></a>3.新建用户及mysql目录</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">groupadd mysql</span><br><span class="line"></span><br><span class="line">useradd -r -g mysql mysql</span><br><span class="line"></span><br><span class="line">设置密码</span><br><span class="line">passwd mysql</span><br><span class="line"></span><br><span class="line">复制my-default.cnf到/etc/目录下</span><br><span class="line">cp /usr/local/mysql/support-files/my-defalut.cnf /etc/my.cnf</span><br><span class="line"></span><br><span class="line">修改my.cnf</span><br><span class="line">[mysql] </span><br><span class="line">default-character-set=utf8 </span><br><span class="line">[mysqld] </span><br><span class="line">default-storage-engine=INNODB </span><br><span class="line">character_set_server=utf8 </span><br><span class="line"></span><br><span class="line">复制mysql.serve到/etc/init.d/</span><br><span class="line">cp /usr/local/mysql/support-files/mysql.serve /etc/init.d/mysql</span><br><span class="line"></span><br><span class="line">修改 /etc/init.d/mysql参数</span><br><span class="line">basedir</span><br><span class="line">datadir</span><br><span class="line"></span><br><span class="line">修改mysql目录权限</span><br><span class="line">chown -R mysql:mysql /usr/local/mysql</span><br><span class="line"></span><br><span class="line">启动数据库</span><br><span class="line">service mysql start</span><br></pre></td></tr></table></figure>
+<h6 id="4-bug集"><a href="#4-bug集" class="headerlink" title="4.bug集"></a>4.bug集</h6><blockquote>
 <ol>
 <li>启动失败，服务器配置太低，内存分配改小一点<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">修改/etc/my.cnf文件</span><br><span class="line">innodb_buffer_pool_size=56M</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 </blockquote>
+<blockquote>
 <ol start="2">
-<li><p>mysql command not found</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">method-1&gt; 配置链接，映射到mysql的bin目录下</span><br><span class="line">method-2&gt; cd /usr/local/mysql/bin    ./mysql</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>不知道数据库的登录密码</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1&gt; 免密登录：service mysql start --skip-grant-tables;</span><br><span class="line">2&gt; 修改密码：</span><br><span class="line">    use mysql;</span><br><span class="line">    flush privileges;</span><br><span class="line">    SET PASSWORD FOR user &apos;root&apos;@localhost = PASSWORD(&apos;自定义密码&apos;);</span><br><span class="line">3&gt; 重启mysql服务</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>远程无法登陆(navicat)</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql的host默认为localhost，远程host无法访问</span><br><span class="line">修改user表的root的host为&apos;%&apos;：update user set host = &apos;%&apos; where host = &apos;localhost&apos;</span><br></pre></td></tr></table></figure>
+<li>mysql command not found <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">method-1&gt; 配置链接，映射到mysql的bin目录下</span><br><span class="line">method-2&gt; cd /usr/local/mysql/bin    ./mysql</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li>不知道数据库的登录密码 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1&gt; 免密登录：service mysql start --skip-grant-tables;</span><br><span class="line">2&gt; 修改密码：</span><br><span class="line">    use mysql;</span><br><span class="line">    flush privileges;</span><br><span class="line">    SET PASSWORD FOR user &apos;root&apos;@localhost = PASSWORD(&apos;自定义密码&apos;);</span><br><span class="line">3&gt; 重启mysql服务</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="4">
+<li>远程无法登陆(navicat) <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql的host默认为localhost，远程host无法访问</span><br><span class="line">修改user表的root的host为&apos;%&apos;：update user set host = &apos;%&apos; where host = &apos;localhost&apos;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</blockquote>
 
       
     </div>
